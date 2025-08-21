@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import NotFound from './components/NotFound.jsx';
+import Hero from './components/Hero.jsx';
 
 const router = createBrowserRouter([
   {
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <NotFound />,
+        element: <Hero />,
       },
     ],
   },
