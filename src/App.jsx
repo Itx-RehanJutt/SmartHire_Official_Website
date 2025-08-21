@@ -1,16 +1,13 @@
-import './App.css';
-import { Outlet } from 'react-router';
-import ScrollToTop from './components/ScrollToTop';
+import HowItWorks from "./components/HowItWorks";
+import GetStarted from "./components/GetStarted";
+import Services from "./components/Services";
 
-function App() {
+export default function App() {
   return (
-    <div className="min-h-screen">
-      <ScrollToTop />
-      {/* <Header logo={LogoLight} /> */}
-      <Outlet />
-      {/* <Footer logo={LogoDark} /> */}
-    </div>
+    <>
+      <HowItWorks />
+      <GetStarted />
+      <Services />
+    </>
   );
 }
-
-export default App;
