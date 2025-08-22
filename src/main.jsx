@@ -4,6 +4,7 @@ import App from './App.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import NotFound from './components/NotFound.jsx';
 import Hero from './components/Hero.jsx';
+import Contact from './components/Contact.jsx';  // 👈 Contact page import kiya
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Hero />,
+      },
+      {
+        path: '/contact',   // 👈 Contact page ka route
+        element: <Contact />,
       },
     ],
   },
